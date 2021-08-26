@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/100-512.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#menuOne").click(function(){
+        $("#menuOne").toggle("slow");
+        $("#menuTwo").toggle("slow");
+      });
+    });
+    $(document).ready(function(){
+      $("#close").click(function(){
+        $("#menuOne").toggle("slow");
+        $("#menuTwo").toggle("slow");
+      });
+    });
+    </script>
+    <title>Farmacoloiga</title>
+    <script src="https://kit.fontawesome.com/9d4c1ceadc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu" id="menuOne">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="diagnosi.html"><i class="fas fa-stethoscope"></i></a></li>
+          <li><a href="cura.html"><i class="fas fa-hand-holding-heart"></i></a></li>
+          <li><a><i class="fas fa-tablets"></i></a></li>
+          <li><a><i class="fas fa-info-circle"></i></a></li>
+        </ul>
+      </div>
+      <div class="onMenuChanged" id="menuTwo">
+        <ul>
+          <li><a href="index.html" style="color: #ff6464"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="diagnosi" style="color: #ff6464"><i class="fas fa-stethoscope"></i> Diagnostica</a></li>
+          <li><a href="cura.html" style="color: #ff6464"><i class="fas fa-hand-holding-heart"></i> Cura</a></li>
+          <li><a style="color: #ff6464"><i class="fas fa-tablets"></i> Farmacologia</a></li>
+          <li class="element">
+            <button onclick="showContacts()" class="contacts" style="color: #ff6464"><i class="fas fa-info-circle"></i> Contatti</button>
+            <div class="Mailclass" id="mails">
+              <a href="mailto:bonati.francesco.studente@liceolussana.eu" style="color: #ff6464">F. Bonati</a>
+              <a href="mailto:gambirasio.noemi.studente@liceolussana.eu" style="color: #ff6464">N. Gambirasio</a>
+              <a href="mailto:lin.massimo.studente@liceolussana.eu" style="color: #ff6464">M. Lin</a>
+              <a href="mailto:trove.mattia.studente@liceolussana.eu" style="color: #ff6464">M. Trov&egrave;</a>
+            </div>
+          </li>
+          <p id="close"><i class="fas fa-times"></i></p>
+        </ul>
+      </div>
+
+      <script type="text/javascript">
+
+        function showContacts(){
+          window.onclick = function(event) {
+            if (event.target.matches('.contacts')) {
+              var dropdowns = document.getElementsByClassName("Mailclass");
+              for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }else {
+                  openDropdown.classList.add('show');
+                }
+              }
+            }
+          }
+        }
+      </script>
+    </header>
+    <div class="contentF">
+      <!-- TUTTO IL CONTENUTO DEL SITO VA INSERITO IN QUESTO DIV-->
+      <h1>FARMACOLOGIA</h1>
+      <hr style="width: 70%; margin: 0 0 8% 15%; background-color: #ff6464; height: 3px; border: none">
+      <br>
+      <h2>Cos'è la farmacologia?</h2>
+      <p>La Farmacologia è quella branca della Medicina che studia il percorso di un farmaco nell’organismo, i suoi
+	meccanismi d’azione ed i suoi effetti, analizzando i meccanismi molecolari e cellulari che sono alla base di
+	questi, occupandosi anche di ricerca e sviluppo di nuovi farmaci.
+      <br><br>
+	La Farmacologia studia sia gli effetti benefici che quelli indesiderati prodotti dai farmaci, introdotti nel
+	nostro organismo come sostanze che hanno la capacità di modificare specifici processi dell’organismo ed
+	hanno la funzione di curare o prevenire determinate malattie. Qualsiasi sostanza ad attività biologica, sia
+	essa dotata di proprietà terapeutiche e non, che abbia la capacità di modulare funzioni fisiologiche
+	preesistenti, alterando lo stato funzionale del sito d'azione su cui agisce, viene definito farmaco. </p>
+      <br><br>
+      <div class="Fpt1">
+      <div class="Fpt2"><h2>Cos'è un farmaco?</h2>
+      <p>La definizione di farmaco data dall'OMS (Organizzazione Mondiale della Sanità) dice che un farmaco è
+	qualsiasi sostanza o prodotto usato per esplorare o modificare sistemi fisiologici o patologici, quindi a scopo
+	terapeutico o a scopo diagnostico, con beneficio di chi li riceve. Il farmaco deve essere introdotto
+	nell'organismo ed andare a modificare una o più funzioni; se ciò non avviene non si potrà sfruttare l'effetto
+	terapeutico che si riceve da tale sostanza.
+      <br><br>
+	In base al tipo di azione farmacologica indotta i farmaci si classificano in: <br>
+  <br>
+      <ul style="list-style-type: none; border-left: 3px solid #ff6464; padding-left: 10px; margin-top: 5px;">
+	<li>Sintomatici: agiscono sui sintomi della malattia (antinfluenzali).</li>
+	<li>Causali o eziologici: agiscono sulla causa della malattia (antibiotici).</li>
+	<li>Patogenetici: agiscono sui meccanismi della malattia (antipertensivi).</li>
+	<li>Sostitutivi: ripristinano funzioni dell'organismo alterate dalla malattia (insulina). </li>
+      </ul>
+      </div>
+        <img id="Fimg1" src="https://vitalrecord.tamhsc.edu/wp-content/uploads/2017/01/pills-tamhsc.jpg" alt="error">
+      </div>
+      <br><br>
+      <h2 class="Fpt3">Storia della farmacologia</h2>
+      <img id="Fimg2" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Hippocrates.jpg" alt="error">
+      <p>La ricerca di rimedi efficaci contro il dolore e la malattia ha caratterizzato la storia dell’umanità sin dalle sue
+	origini. Le prime forme di farmacologia si possono probabilmente già rintracciare in quei tentativi condotti
+	dai cosiddetti uomini primitivi volti a riconoscere le proprietà benefiche contenute in erbe, acque sorgive e
+	sostanze alimentari.
+	Sarà con Ippocrate, nell’Atene del Secolo V a.C., e Galeno, medico della Roma Imperiale, che lo studio del
+	corpo umano e di come varie sostanze possano interagire – positivamente o negativamente – con esso
+	diventerà più rigoroso. Nel corso del Medioevo, furono proprio le dottrine, riportate alla luce dagli studiosi
+	musulmani e dai monaci benedettini, di questi due pensatori a rappresentare la colonna portante di tutta la
+	medicina medioevale e rinascimentale.
+      <br><br>
+	Sarà soltanto al principio del Secolo XIX che la chimica abbandonerà in modo definitivo il percorso
+	alchemico e assumerà le caratteristiche di vera e propria scienza, grazie a una metodologia di ricerca impostata sulla sperimentazione
+	sistematica realizzata prima in laboratorio (in vitro) e poi sugli organismi viventi (in vivo).
+	La farmacologia iniziò a compiere enormi progressi, iniziati, in particolare, a partire dalla scoperta, nel 1792,
+	del primo vaccino moderno da parte del medico inglese Edward Jenner, che scoprì un modo per prevenire l'infezione da vaiolo.
+      <br><br>
+	Nell’ottocento, il processo di fabbricazione del farmaco divenne industrializzato, con i medicinali che
+	divennero sempre di più una vera e propria merce. Alcune di queste realtà industriali, come le tedesche
+	Bayer, BASF e Schering o le svizzere CIB, Sandoz e Hoffman La Roche, diventeranno celebri aziende
+	multinazionali tuttora esistenti. In questo periodo, videro la luce moltissimi nuovi farmaci, come
+	l’Acetofenetidina, precursore dell’odierno Paracetamolo, l’acido Acetilsalicilico, cioè l’Aspirina, e il Barbital
+	venduto con il nome di Veronal.
+      <br><br>
+      <div class="Fpt1">
+        <div class="Fpt2">
+        La vera svolta, tuttavia, si ebbe con la scoperta della penicillina, da parte di Alexander Fleming, che nel 1929, si accorse, per
+        caso, che in un terreno di coltura dove erano stati seminati degli stafilococchi, la caduta non voluta di una
+        spora aveva creato una colonia di una comune muffa, il Penicillium notatum, intorno alla quale gli
+        stafilococchi non si sviluppavano. Fleming capì che questo fenomeno era provocato dell’attività
+        antibatterica esercitata dalla sostanza prodotta dalla muffa. La  penicillina fu però isolata solo nel 1940 per merito di Ernst Boris Chain e Howard Walter Florey, i quali ne
+        dimostrarono le capacità in vivo, che, di fatto, ne permise l’avvio della produzione industriale a scopo medico.
+      </div>
+        <img id="Fimg3" src="https://www.lacittadisalerno.it/image/policy:1.2443762:1591375261/.jpg?f=2x1&$p$f=7d891a5&w=1500&$w=f075b93" alt="error">
+      </div>
+      <br><br>
+	I farmaci durante il Novecento divennero un articolo industriale che, se da un lato permise di curare molte
+	persone e molte malattie, allo stesso tempo, arricchì i produttori. Tra il 1950 e il 1970 le industrie
+	farmaceutiche investirono ingenti finanziamenti e tecnologie sempre più all’avanguardia per individuare e
+	produrre nuovi antibiotici e nuove classi di farmaci, come ad esempio i farmaci antitumorali.
+      <br><br>
+	Tuttavia, accanto ai grandi trionfi, non tardarono ad arrivare immani tragedie frutto di errori o, più spesso, di
+	“convenienti” superficialità. L’episodio più grave fu senza dubbio quello legato alla talidomide, un farmaco
+	ad azione ipnotica che, se assunto in gravidanza, determina nei nascituri una gravissima malformazione, la
+	focomelia. In seguito a un tale scandalo, nacquerò numerose associazioni, nazionali e non, come ad esempio l'EMA, volte ad applicare un controllo più
+	rigido sulla produzione dei farmaci.
+      <br><br>
+      <img id="Fimg4" src="https://cdn.ilpost.it/wp-content/uploads/2013/04/03-watson-crick.jpg" alt="error">
+	La scoperta che tuttavia distinguerà il “secolo breve”, e che ancora oggi rappresenta una feconda frontiera di studio, è senz’altro quella dell’acido desossiribonucleico
+	(DNA), descritto nel 1953 da Harry Francis Crick e James Dewey Watson. Grazie ad essa, si aprì al mondo della ricerca un nuovo campo da esplorare: l'ingegneria genetica.
+	Il primo caso di applicazione commerciale dell’ingegneria genetica in campo farmaceutico si è avuto con
+	l’introduzione del gene per l’insulina in un comune batterio intestinale, l’Escherichia coli che ha, di fatto,
+	dato avvio alla nascita dei farmaci biotecnologici. I farmaci biotecnologici quindi non sono il risultato di una sintesi
+	chimica ma, attraverso la tecnica del DNA ricombinante, sfruttano i meccanismi molecolari intrinseci della
+	duplicazione del materiale genetico di un organismo.
+      <br><br>
+	I grandi risultati ottenuti dalla ricerca scientifica in questi ultimi decenni hanno, ancora una volta, svelato varie contradizioni del nostro sistema economico.
+	Emblematico, in tal senso, il largo impiego di antibiotici – per esempio, in Italia nel 2017 gli antimicrobici
+	generali per uso sistemico hanno rappresentato la terza categoria terapeutica di maggior spesa pubblica, –
+	che se da un lato ha consentito di guarire milioni di malati con infezioni in potenza letali, dall’altro ne ha
+	determinato un uso eccessivo e inappropriato, provocando l’insorgenza di germi patogeni antibiotico
+	resistenti e la conseguente necessità di dover creare nuovi e più potenti antibiotici.</p>
+      <br><br>
+      <h2>Come si crea un farmaco?</h2>
+      <br>
+      <h3>Il bersaglio farmacologico</h3>
+      <p>Il "bersaglio farmacologico", è l'elemento o il meccanismo biologico sul quale il farmaco dovrà intervenire
+	per modificare l'evolversi di una malattia. A seconda della patologia, il bersaglio può essere diverso: un
+	virus o un batterio, la carenza di un ormone nelle patologie metaboliche, il meccanismo di degenerazione
+	delle cellule cerebrali come nella malattia di Parkinson o nel morbo di Alzheimer.
+	Quindi il bersaglio può essere una proteina difettosa, un microrganismo, un segnale biochimico mal
+	funzionante, un legame molecolare alterato.</p>
+      <br>
+      <h3>Creazione del farmaco</h3>
+      <div class="Fpt1">
+        <div class="Fpt2">
+      <p>Una volta individuato il bersaglio farmacologico si procede con l'identificazione di quelle sostanze che sono
+	in grado di legarsi ad esso in modo specifico e selettivo in modo da ottenere un effetto terapeutico. Queste
+	sostanze vengono chiamate composti guida (lead compound) e sono i precursori del futuro farmaco.
+	Generalmente il ricercatore utilizza un approccio di tipo scientifico. Il più classico è quello di setacciare un
+	elevato numero di molecole, naturali o sintetiche, allo scopo di individuare quelle che possiedono le
+	potenzialità terapeutiche desiderate.
+      <br><br>
+	Un altro metodo è la "rational drug discovery", dove il ricercatore, anziché analizzare numerose sostanze
+	alla ricerca della molecola giusta, crea un composto specifico per il bersaglio che intende colpire. In questo
+	caso la molecola guida sarà di natura sintetica.
+	Una volta individuato il bersaglio farmacologico si procede con l'identificazione di quelle sostanze che sono
+	in grado di legarsi ad esso in modo specifico e selettivo in modo da ottenere un effetto terapeutico. Queste
+	sostanze vengono chiamate composti guida (lead compound) e sono i precursori del futuro farmaco.<br>
+	Il ricercatore utilizza un approccio di tipo scientifico. Il più classico è quello di setacciare un
+	elevato numero di molecole, naturali o sintetiche, (si dice che si effettua uno screening casuale) allo scopo
+	di individuare quelle che possiedono le potenzialità terapeutiche desiderate.
+	Un altro metodo è la "rational drug discovery" dove il ricercatore, anziché analizzare numerose sostanze
+	alla ricerca della molecola giusta, crea un composto specifico per il bersaglio che intende colpire. In questo
+	caso la molecola guida sarà di natura sintetica.
+	In alcuni casi però l'identificazione delle molecole guida avviene casualmente come nel caso della
+	penicillina, il primo antibiotico scoperto, identificato da Fleming perchè una coltura di Staphylococcus
+	aureus era stata inquinata da una muffa. In altri casi, invece, la scoperta avviene osservando gli effetti
+	secondari positivi di una molecola di cui si cercava di individuare gli effetti indesiderati.</p>
+    </div>
+    <img id="Fimg5" src="https://www.gsk.com/media/5620/timeline-development-stages.jpg?anchor=center&mode=crop&quality=90&width=1118&height=630&rnd=132079287190000000" alt="error">
+    <img id="Fimg5" src="https://cdn-prod.medicalnewstoday.com/content/images/articles/322/322682/female-genetic-scientists-in-a-lab.jpg" alt="error">
+  </div>
+      <br>
+      <h3>Sperimentazione del farmaco</h3>
+      <p>Una volta scoperta la molecola guida si parte con la sperimentazione.
+      <br>
+	I primi test si effettuano in laboratorio. Questa fase prende il nome di sperimentazione preclinica: il ricercatore
+	utilizza i cosiddetti modelli sperimentali della malattia per accertare l'efficacia del farmaco. Sono sistemi biologici
+	in cui vengono  riprodotte le stesse condizioni presenti nella patologia. Si utilizzano colture di cellule fatte crescere
+	in laboratorio (modelli in vitro) oppure si ricorre agli animali da laboratorio (modelli in vivo).
+      <br><br>
+	La fase successiva è la ricerca clinica, ovvero: "Qualsiasi studio sull'uomo finalizzato a scoprire o verificare gli
+	effetti clinici, farmacologici, e/o altri effetti come il meccanismo d'azione, l'assorbimento, la distribuzione, il
+	metabolismo, l'eliminazione, le interazioni con altri farmaci, etc".
+      <br>
+	Per i farmaci che passano con successo queste due fasi della sperimentazione viene richiesta l'autorizzazione all'immissione
+	in commercio (AIC).Una volta in commercio il farmaco continua ad essere monitorato per verificarne la tollerabilità e la sicurezza a lungo termine.</p>
+</div>
+<script type="text/javascript">
+  document.getElementById("menuOne").style.backgroundColor="#ff6464";
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,436 @@
+body
+{
+  background-color: #fefefe;
+  cursor: default;
+  font-family: sans-serif;
+  color: rgba(0,0,0,0.6);
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_intro
+{
+  font-size: 7vw;
+  text-align: center;
+  width: 88%;
+}
+
+section .section_pt1:hover
+{
+  background-color: #1fbf24;
+  color: white;
+  border-radius: 13px;
+  cursor: default;
+  transition: 1s ease-in-out 0s;
+  transform: translateY(-10px);
+  box-shadow: 0 0 64px #1fbf24;
+}
+
+section .section_pt1
+{
+  position: absolute;
+  min-width: 30%;
+  min-height: 30%;
+  padding: 3% 4% 3% 4%;
+  z-index: 1;
+  text-align: center;
+  background-color: rgba(255, 255, 255);
+  border-radius: 13px;
+  color: #1fbf24;
+  transition: 1s ease-in-out 0s;
+  box-shadow: 10px 10px 7px grey;
+}
+
+section .section_pt2
+{
+  background-color: rgba(227, 227, 227, 0.7);
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 0;
+}
+
+section .row
+{
+  position: inherit;
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  white-space: nowrap;
+  font-size: 60px;
+  padding: 1.1%;
+}
+
+i
+{
+  transition: 1s;
+  padding: 0 5px;
+  user-select: none;
+  cursor: default;
+  margin: 0 30px 0 30px;
+}
+
+/*animazione background*/
+section .row div
+{
+  animation: animate 80s linear infinite;
+  animation-delay: -80s;
+}
+
+section .row div:nth-child(2)
+{
+  animation: animate2 80s linear infinite;
+  animation-delay: -40s;
+}
+
+@keyframes animate {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate2 {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-200%);
+  }
+}
+
+section .row:nth-child(even) div
+{
+  animation: animate3 80s linear infinite;
+  animation-delay: -80s;
+}
+
+section .row:nth-child(even) div:nth-child(2)
+{
+  animation: animate4 80s linear infinite;
+  animation-delay: -40s;
+}
+
+@keyframes animate3 {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(100%);
+  }
+}
+
+@keyframes animate4 {
+  0%{
+    transform: translateX(-200%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+/*descizione*/
+.descrizione
+{
+  color: black;
+  padding: 80px;
+  font-size: 25px;
+  text-align: center;
+  font-family: italic;
+}
+
+/*cards*/
+/*diagnosi*/
+.diagonsi::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.diagnosi{
+  display: -webkit-flex;
+  display: flex;
+}
+
+.link
+{
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+  margin-left: 40px;
+  color: #ff9100;
+  transition: 1.5s;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.link:hover{
+  background-color: #ff9100;
+  color: white;
+  transition: 1.5s;
+  border-radius: 7px;
+  box-shadow: 1px 8px 20px 1px  rgba(0, 0, 0, 0.3);
+}
+
+.diagnosi div
+{
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin-top: 40px;
+}
+
+.img
+{
+  background-color: #ff9100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img i
+{
+  color: #ff9100;
+  font-size: 70px;
+  border-radius: 100px;
+  background-color: white;
+  padding: 30px;
+}
+
+.diagnosi p
+{
+  color: black;
+  font-size: 20px;
+  margin: 40px;
+  line-height: 27px;
+}
+
+/*cura*/
+.cura::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cura
+{
+  display: -webkit-flex;
+  display: flex;
+}
+
+.cura div
+{
+  margin-top: 30px;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin-top: 40px;
+}
+
+.cura p
+{
+  color: black;
+  font-size: 20px;
+  margin: 40px;
+  line-height: 27px;
+}
+
+.imgCura
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00943b;
+}
+
+.imgCura i
+{
+  color: #00943b;
+  font-size: 70px;
+  border-radius: 200px;
+  background-color: white;
+  padding: 30px;
+}
+
+
+.linkUno
+{
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+  margin-left: 40px;
+  padding: 20px;
+  color: #00943b;
+  transition: 1.5s;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.linkUno:hover{
+  background-color: #00943b;
+  color: white;
+  transition: 1.5s;
+  border-radius: 7px;
+  box-shadow: 1px 8px 20px 1px  rgba(0, 0, 0, 0.3);
+}
+
+/*farmacologia*/
+.farmacologia::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.farmacologia{
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.linkDue
+{
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 40px;
+    color: #ff6464;
+    transition: 1.5s;
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.linkDue:hover{
+  background-color: #ff6464;
+  color: white;
+  transition: 1.5s;
+  border-radius: 7px;
+  box-shadow: 1px 8px 20px 1px  rgba(0, 0, 0, 0.3);
+}
+
+.farmacologia div
+{
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin-top: 40px;
+}
+
+.imgFarmacologia
+{
+  background-color: #ff6464;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgFarmacologia i
+{
+  color: #ff6464;
+  font-size: 70px;
+  border-radius: 200px;
+  background-color: white;
+  padding: 30px;
+}
+
+.farmacologia p
+{
+  color: black;
+  font-size: 20px;
+  margin: 40px;
+  line-height: 27px;
+}
+
+.imgCura, .imgFarmacologia, .img{
+  padding: 120px 0 120px 0;
+}
+
+.cura p, .diagnosi p, .farmacologia p{
+  text-align: justify;
+}
+
+.allLinks
+{
+  padding: 0.5%;
+}
+
+
+/*footer*/
+.footer
+{
+  width: auto;
+  background-color: #1f2021;
+}
+
+.footer p
+{
+  font-size: 15px;
+  padding: 3%;
+  color: white;
+}
+
+.footer p a
+{
+  color: white;
+  text-decoration: none;
+}
+
+/*smartphone*/
+@media (max-width: 700px){
+
+  section .section_pt1{
+    width: 70%;
+    left: 15%;
+    top: 30%;
+  }
+
+  .text_intro{
+    font-size: 15vw;
+  }
+
+  .diagnosi, .cura, .farmacologia{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .imgCura, .imgFarmacologia, .img{
+    padding: 50px;
+  }
+
+  .link, .linkUno, .linkDue{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .footer p{
+    font-size: 80%;
+    padding: 3%;
+  }
+
+  .descrizione{
+    font-size: 25px;
+    padding: 14%;
+  }
+}

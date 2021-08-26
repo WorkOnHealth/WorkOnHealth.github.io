@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/100-512.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#menuOne").click(function(){
+        $("#menuOne").toggle("slow");
+        $("#menuTwo").toggle("slow");
+      });
+    });
+    $(document).ready(function(){
+      $("#close").click(function(){
+        $("#menuOne").toggle("slow");
+        $("#menuTwo").toggle("slow");
+      });
+    });
+    </script>
+    <title>Diagnosi</title>
+    <script src="https://kit.fontawesome.com/9d4c1ceadc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu" id="menuOne">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+          <li><a><i class="fas fa-stethoscope"></i></a></li>
+          <li><a href="cura.html"><i class="fas fa-hand-holding-heart"></i></a></li>
+          <li><a href="farmacologia.html"><i class="fas fa-tablets"></i></a></li>
+          <li><a><i class="fas fa-info-circle"></i></a></li>
+        </ul>
+      </div>
+      <div class="onMenuChanged" id="menuTwo">
+        <ul>
+          <li><a href="index.html" style="color: #ff9100"><i class="fas fa-home"></i> Home</a></li>
+          <li><a style="color: #ff9100"><i class="fas fa-stethoscope"></i> Diagnostica</a></li>
+          <li><a href="cura.html" style="color: #ff9100"><i class="fas fa-hand-holding-heart"></i> Cura</a></li>
+          <li><a href="farmacologia.html" style="color: #ff9100"><i class="fas fa-tablets"></i> Farmacologia</a></li>
+          <li class="element">
+            <button onclick="showContacts()" class="contacts" style="color: #ff9100"><i class="fas fa-info-circle"></i> Contatti</button>
+            <div class="Mailclass" id="mails">
+              <a href="mailto:bonati.francesco.studente@liceolussana.eu" style="color: #ff9100">F. Bonati</a>
+              <a href="mailto:gambirasio.noemi.studente@liceolussana.eu" style="color: #ff9100">N. Gambirasio</a>
+              <a href="mailto:lin.massimo.studente@liceolussana.eu" style="color: #ff9100">M. Lin</a>
+              <a href="mailto:trove.mattia.studente@liceolussana.eu" style="color: #ff9100">M. Trov&egrave;</a>
+            </div>
+          </li>
+          <p id="close"><i class="fas fa-times"></i></p>
+        </ul>
+      </div>
+
+      <script type="text/javascript">
+
+        function showContacts(){
+          window.onclick = function(event) {
+            if (event.target.matches('.contacts')) {
+              var dropdowns = document.getElementsByClassName("Mailclass");
+              for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }else {
+                  openDropdown.classList.add('show');
+                }
+              }
+            }
+          }
+        }
+      </script>
+    </header>
+    <div class="contentD">
+      <!-- TUTTO IL CONTENUTO DEL SITO VA INSERITO IN QUESTO DIV-->
+	<h1>DIAGNOSTICA</h1>
+  <hr style="width: 70%; margin: 0 0 8% 15%; background-color: #ff9100; height: 3px; border: none">
+  <br>
+	<p>
+		La diagnostica o diagnosi medica è il processo per determinare
+		quale malattia o condizione che spiega sintomi o le condizioni di
+		una persona per riuscire a determinare diagnosi. La diagnostica fa
+		affidamento su varie informazioni per giungere a una diagnosi.
+		Importante è lo studio di di rilevamenti eseguiti direttamente
+		sull'ammalato, ma spesso si osservano anche i dati forniti da
+		quest'ultimo. L’obbiettivo è ricondurre i sintomi a una o più precise
+		patologie. Nel processo di diagnosi sono quindi importanti anche le
+		informazioni sulla storia medica del paziente e della sua famiglia.
+		Per questo motivo tutto viene riportato in una cartella clinica
+		consultabile in seguito.
+		Spesso durante un singolo processo diagnostico si effettuano
+		svariate fasi e test perché molti segni e sintomi non sono specifici di
+		una determinata patologia. Quando i sintomi sono troppo comuni
+		per individuare una patologia specifica si procede con una diagnosi
+		differenziale nella quale sono confrontate diverse possibili
+		spiegazioni spesso procedendo per esclusione. Occasionalmente il
+		processo è reso facile da uno o più segnali o sintomi
+		patognomonici, ovvero specifici di una sola causa.
+		La diagnostica si divide secondo gli organi o gli apparati cui viene
+		applicata: ne deriva una distinzione in diagnostica medica e
+		diagnostica chirurgica. Importante anche il metodo di studio che divide la diagnostica in:
+    <br><br>
+    <img id="Dimg1" src="https://www.emicenter.it/wp-content/uploads/2016/12/Gaspa-Scheletro_Raggi.jpg" alt="error">
+		<ul style="list-style-type: none; border-left: 3px solid #ff9100; padding-left: 10px; margin-top: 5px;">
+			<li>diagnostica radiologica</li>
+			<li>diagnostica batteriologica</li>
+			<li>diagnostica biochimica</li>
+		</ul>
+    <br><br>
+		Esiste anche una diagnostica differenziale effettuata con l'uso di
+		<a href = "#SSW"> software specializzati</a>. Questo tipo di diagnostica nulla toglie al
+		medico che valuta di volta in volta i risultati offerti dal software.
+
+	</p>
+	<p>
+		Una volta raggiunta la diagnosi si inizia a stabilire quale è la
+		migliore terapia per la patologia in questione: farmacologica,
+		dietetica, chirurgica, ecc.
+		Per saperne di più sulla cura e sui farmaci che esse prevede potete
+		consultare le altre due sezioni del nostro sito.
+		Una volta stabilita la diagnosi è possibile anche formulare una
+		prognosi, ovvero un giudizio di previsione su quello che sarà il
+		probabile esito dell'evento patologico.
+	</p>
+	<p>
+		La diagnosi può essere eseguita anche in assenza di sintomi e quindi con funzione
+		preventiva. In questo caso si dice essere formulata in fase
+		preclinica. Questo tipo di diagnostica è dunque legata a indagini
+		eseguite tramite esami di screening. Tra queste, sono di particolare
+		rilevanza la mammografia, radiografia del seno, la gastroscopia e
+		colonscopia, indagini endoscopiche e quelle ecografiche.
+	</p>
+	<p>
+		Arriviamo ora a parlare nello specifico del procedimento diagnostico.
+		Il procedimento diagnostico è diviso in fasi:
+	</p>
+	<div class="btn-group">
+  		<button class="buttonFasiDian" href = "#PD1">Anamnesi</button>
+  		<button class="buttonFasiDian" href = "#PD2">Semeiotica</button>
+  		<button class="buttonFasiDian" href = "#PD3">Diagnostica differenziale</button>
+  	</div>
+	<p style="clear:both"><p>
+    <br><br>
+	<h2 id = "PD1">Anamnesi</h2>
+	<p>
+		L'anamnesi si basa sulla storia clinica del paziente che viene interrogato
+		direttamente o desunta dal racconto dei familiari. Serve a
+		raccogliere i dati riguardanti i precedenti familiari e personali oltre
+		che quelli fisiologici e patologici sia remoti che recenti.
+		L'anamnesi è il primo dei tre processi utilizzati nella fase analitica
+		del processo diagnostico. L'anamnesi, in medicina, è la raccolta di
+		tutte quelle informazioni, notizie e sensazioni che possono aiutare
+		ad individuare una corretta diagnosi di patologia o una adeguata
+		procedura sanitaria. Vengono raccolti sia dati fisiologici che
+		patologici. Non necessariamente i dati raccolti devono far
+		riferimento a un periodo di tempo prossimo al sorgere dei sintomi.
+		Possono essere utili anche informazioni sulla vita medica di familiari
+		o della precedente storia clinica del paziente.
+		L'anamnesi si divide in più parti, principalmente una familiare e una
+		personale.
+	</p>
+    <br><br>
+	<h3 id = "PD1.1">L'anamnesi familiare</h3>
+	<p>
+		L’indagine di anamnesi familiare viene condotta sia sugli ascendenti
+		(i genitori e i nonni) e sui collaterali (fratelli e sorelle). L’anamnesi è
+		veramente fondamentale nel caso delle malattie genetiche o delle
+		predisposizioni.
+	</p>
+  <br><br>
+	<h3 id = "PD1.2">L'anamnesi personale</h3>
+	<p>
+		L'anamnesi personale si divide a sua volta in fisiologica,
+		patologica remota e patologica prossima. La raccolta dei dati
+		anamnestici sarà differente a seconda dell'età e del sesso della
+		persona.<br><br>
+		<h4>Anamnesi fisiologica</h4>
+		Vengono chieste informazioni riguardo a fasi rilevanti dal punto
+		di vista medico, come: il parto, la pubertà, matrimonio e
+		gravidanze, sessualità e menopausa, allergie, abitudini
+		alimentari e dipendenze e disturbi mentali.
+		<br><br><h4>Anamnesi patologica prossima</h4>
+		L’anamnesi patologica prossima chiamata anche "patologica
+		recente" riguarda il disturbo per cui il paziente consulta il medico.
+		Le informazioni raccolte riguardano sulle attività e condizioni nel
+		momento del presentarsi dei sintomi. In queste informazioni
+		rientrano anche l’uso di farmaci e droghe.
+		<br><br><h4>Anamnesi patologica remota</h4>
+		L'anamnesi patologica remota (APR) è l’osservazione è studio della
+		storia cronologica e ordinata delle malattie traumi e interventi
+		chirurgici che il paziente ha affrontando in passato.
+	</p>
+
+	<br><br>
+	<h2 id = "PD2">Semeiotica</h2>
+	<p>
+		In questa fase del processo diagnostico si fanno ad analizzare i
+		sintomi del paziente. A seconda di come è da cosa si analizza la
+		semeiotica di divide in:
+    <div class="images">
+      <img id="Dimg4" src="https://static.ohga.it/wp-content/uploads/sites/24/2018/10/iStock-1152190872-300x200.jpg" alt="error">
+      <img id="Dimg5" src="https://cdn.shopify.com/s/files/1/0399/2725/1109/files/Come-eseguire-elettrocardiogramma-ecg_large.jpg?v=1591529322" alt="error">
+    </div>
+    <br><br>
+		<ul style="list-style-type: none; border-left: 3px solid #ff9100; padding-left: 10px; margin-top: 5px;">
+			<li>fisica</li>
+			<li>di laboratorio: dopo aver effettuato prelievi di
+			sangue, urine, feci, liquor cefalorachidiano, liquido pleurico,
+			liquido ascitico, liquido sinoviale e campioni di tessuto, si
+			procede alla loro analisi in laboratorio.</li>
+			<li>radiologica, che si avvale dell'utilizzo di RX, TAC, medicina nucleare.</li>
+			<li>strumentale organica: caratterizzata da esami
+			come gli ECG, EEG, endoscopia, ecografia ed esami
+			specialistici (spirometria, impedenzometria).</li>
+		</ul>
+    <br><br>
+	</p>
+	<p>
+		Una volta raccolti ed analizzati i dati si inizia l’esame obbiettivo.
+		L’esame parte da un’esame generale per poi diventare sempre più specifico.
+		Questa parte del processo diagnostico può essere
+		ulteriormente suddivisa:
+    <br><br>
+		<ul style="list-style-type: none; border-left: 3px solid #ff9100; padding-left: 10px; margin-top: 5px;">
+			<li><a href = "#S1">Ispezione</a></li>
+			<li><a href = "#S2">Palpazione</a></li>
+			<li><a href = "#S3">Percussione</a></li>
+			<li><a href = "#S4">Auscultazione</a></li>
+		</ul>
+    <br><br>
+	</p>
+	<h3 id = "S1"> Ispezione </h3>
+	<p>
+		L’ispezione consiste nell’osservare il paziente per ricavare
+		informazioni sulle caratteristiche e sui sintomi del soggetto.
+		L'ispezione ha inizio quando il paziente entra nello studio medico. Il
+		medico ne deve stabilire il sesso ed età. Deve osservare anche i
+		movimenti del paziente. Alcune posture involontarie possono
+		indicare un tentativo del corpo di sentire meno dolore. Sempre
+		compito del medico è stabilire il grado di nutrizione e di idratazione del
+		paziente, nonché registrarne i parametri vitali (presenza polsi,
+		frequenza respiratoria, temperatura corporea, pressione arteriosa).
+		Infine si determina lo stato degli annessi cutanei o la presenza di
+		anomalie visibili.
+	</p> <br><br>
+  <img id="Dimg7" src="https://images.treccani.it/enc/media/share/images/orig/system/galleries/MEDICINA/percussione_fig_vol2_018990_001.jpg" alt="error">
+  <h3  id = "S3">Percussione</h3>
+  <p>
+    Con le dita il medico può percuotere una parte
+    specifica del corpo. A seconda del suono dovuto alla
+    percussione si possono dedurre informazioni sulla
+    situazione interna del corpo del paziente. I suoni sono
+    fondamentalmente di due tipi: suono ottuso, tipico degli organi pieni
+    e suono chiaro, tipico degli organi cavi. La presenza di un suono
+    differente da quello atteso porta al sospetto di una situazione
+    patologica. È importante sapere dove andare a effettuare la
+    percussione. Lo scorretto posizionamento delle dita durante l’analisi
+    potrebbe portare a conclusioni sbagliate.
+  </p>
+<br><br>
+  <p class="Ddimg7">La percussione medica viene effettuata con l'ausilio di un dito detto plessimetro che viene poggiato su una determinata zona anatomica e un dito chiamato plessore che percuote il dito plessimetro al fine di produrre un suono.</p>
+  <h3  id = "S2">Palpazione</h3>
+  <p>
+    La palpazione indica l’analisi tramite il tatto di una o più regioni del
+    corpo per descrivere situazioni di normalità o patologiche. Deve
+    essere prima superficiale poi profonda. Alcune manovre permettono
+    di individuare informazioni fondamentali alla diagnosi.
+  </p>
+  <br><br>
+  <img id="Dimg6" src="https://viaggiarealverde.it/wp-content/uploads/2020/05/medico-trentatre-33-motivo.jpg" alt="error">
+	<h3  id = "S4">Auscultazione</h3>
+	<p>
+		Anche l'auscultazione studia i suoni emessi dal nostro corpo,
+		spesso tramite l’uso di un fenendoscopio. I nostri organi producono
+		dei suoni. Bisogna quindi distinguere i rumori fisiologici, come il
+		battito cardiaco da quelli aggiunti che possono indicare patologie.
+		Solitamente si effettua l'auscultazione di torace (per cuore e
+		polmoni), addome e polsi (per individuare eventuali soffi).
+	</p>
+	<br><br>
+	<h2 id = "PD3">Differenziale</h2>
+	<p>
+		La diagnosi differenziale è la parte finale del processo di diagnosi. A
+		seconda dei dati raccolti delle fasi precedenti si procede tramite
+		esami differenziati a eliminare gli ultimi dubbi prima di procedere
+		alla diagnosi definitiva. Ultimamente in questa ultima fase si è
+		iniziato ad introdurre l’utilizzo di software specializzati. I software
+		non sostituiscono il lavoro del medico, ma anzi sono uno strumento
+		a sua disposizione.
+	</p>
+
+  <br><br>
+	<h2 id = "SSW">Diagnosi e terapia con l'intelligenza artificiale </h2>
+	<p>
+		La tecnologia informatica offre un grande supporto alla diagnosi.
+		Vari centri nel mondo si avvalgono dello spazio e della potenza di calcolo
+		dei supercomputer più potenti al mondo, per ottenere diagnosi
+		veloci ed accurate, che attingono ed elaborano informazioni a
+		partire dalla enorme base di conoscenza reperibile nei motori di
+		ricerca e database Internet, incluse le stesse cartelle cliniche
+		elettroniche anonime dei pazienti.
+		Questi supercomputer eseguono una ricerca su milioni di pagine in
+		tempi di millesecondi, a cui si aggiunge la capacità di elaborazione
+		di un sistema software composto da tecniche allo stato dell'arte
+		dell'apprendimento automatico, intelligenza artificiale ed
+		elaborazione del linguaggio naturale. Questa funzionalità opera sia
+		su testi che immagini, per cui aiuta il medico nella diagnosi della
+		malattia a partire dall'elenco dei sintomi, ovvero dall'analisi di
+		immagini strumentali, e nella proposta di una valida terapia.<br>
+		Ad esempio, l'intelligenza artificiale Watson Health rappresenta una
+		sempre più preziosa risorsa nel campo.
+	</p>
+  <div class="images">
+    <img id="Dimg2" src="https://nittanyai.psu.edu/wp-content/uploads/IBM-Watson-Health.png" alt="error">
+  </div>
+  <div class="images">
+    <img id="Dimg3" src="https://www.clearintelligence.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-11-at-3.22.24-PM.png" alt="error">
+  </div>
+  <br><br>
+	<h2>Autodiagnosi</h2>
+	<p>
+		L'autodiagnosi da parte del paziente è sempre fortemente
+		sconsigliata dai medici. Il paziente spesso non ha le conoscenze e
+		gli strumenti adatti a diagnosticare con certezza la patologia.
+		Ricordiamo che una scorretta diagnosi porta spesso alla scelta di
+		una terapia errata che può avere conseguenze gravi sulla saluta del
+		paziente.
+	</p>
+	<br><br>
+  </div>
+    <script type="text/javascript">
+      document.getElementById("menuOne").style.backgroundColor="#ff9100";
+    </script>
+  </body>
+</html>
